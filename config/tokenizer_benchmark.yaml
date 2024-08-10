@@ -1,0 +1,15 @@
+node_lines:
+- node_line_name: retrieve_node_line
+  nodes:
+    - node_type: retrieval
+      strategy:
+        metrics: [retrieval_f1, retrieval_recall, retrieval_precision, retrieval_map, retrieval_ndcg]
+      top_k: [ 1, 3, 5, 10, 50 ]
+      modules:
+        - module_type: vectordb
+          embedding_model: upstage_embed
+        - module_type: bm25
+          bm25_tokenizer: [space, ko_kiwi, ko_okt, ko_kkma]
+        - module_type: hybrid_rrf
+        - module_type: hybrid_cc
+          normalize_method: tmm

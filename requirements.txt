@@ -1,3 +1,4 @@
-AutoRAG>=0.2.11
+AutoRAG[ko]>=0.2.11
 click
 python-dotenv
+llama-index-embeddings-upstage
