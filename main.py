@@ -12,7 +12,8 @@ data_path = os.path.join(root_path, 'data')
 
 
 @click.command()
-@click.option('--config', type=click.Path(exists=True))
+@click.option('--config', type=click.Path(exists=True),
+              default=os.path.join(root_path, 'config', 'tokenizer_benchmark.yaml'))
 @click.option('--qa_data_path', type=click.Path(exists=True),
               default=os.path.join(data_path, 'qa_v4.parquet'))
 @click.option('--corpus_data_path', type=click.Path(exists=True),
