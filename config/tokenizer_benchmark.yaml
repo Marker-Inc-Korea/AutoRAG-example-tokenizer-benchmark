@@ -10,6 +10,3 @@ node_lines:
           embedding_model: upstage_embed
         - module_type: bm25
           bm25_tokenizer: [space, ko_kiwi, ko_okt, ko_kkma]
-        - module_type: hybrid_rrf
-        - module_type: hybrid_cc
-          normalize_method: tmm
