@@ -1,4 +1,4 @@
-AutoRAG[ko]>=0.2.11
+AutoRAG[ko]>=0.2.18
 click
 python-dotenv
 llama-index-embeddings-upstage
